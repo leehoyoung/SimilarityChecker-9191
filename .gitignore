@@ -1,0 +1,42 @@
+# Visual Studio IDE files
+.vs/
+*.VC.db
+*.VC.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build output
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww]in32/
+Build/
+Bin/
+Obj/
+*.ilk
+*.pdb
+*.obj
+*.exe
+*.exp
+*.lib
+*.log
+*.tlog
+*.idb
+*.iobj
+*.ipdb
+
+# NuGet
+packages/
+*.nupkg
+
+# Test results
+TestResults/
+[Tt]est[Rr]esult*/
+
+# Misc
+*.tmp
+*.bak
+Similari.*/
