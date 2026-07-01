@@ -8,7 +8,8 @@ public:
 		int longSize = std::max(a.size(), b.size());
 		int shortSize = std::min(a.size(), b.size());
 
-		return (1 - (longSize - shortSize) / shortSize) * MAX_SCORE;
+		double ratio = 1 - static_cast<double>(longSize - shortSize) / shortSize;
+		return static_cast<int>(ratio * MAX_SCORE);
 	}
 
 };
