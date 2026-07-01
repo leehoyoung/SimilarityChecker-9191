@@ -5,7 +5,11 @@ using namespace testing;
 
 TEST(Checker, lengthTest) {
 	Checker check;
-	EXPECT_EQ(0, check.getLengthScore("A", "B"));
+	EXPECT_EQ(60, check.getLengthScore("A", "B"));
+}
+TEST(Checker, lengthTest2) {
+	Checker check;
+	EXPECT_EQ(60, check.getLengthScore("ASD", "DSA"));
 }
 
 int main() {
