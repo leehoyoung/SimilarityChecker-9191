@@ -1,21 +1,14 @@
 #include <string>
+#include <algorithm>
+#include "checker.h"
 using std::string;
 class Checker {
 public:
 	int getLengthScore(string a, string b) {
-		int longSize;
-		int shortSize;
+		int longSize = std::max(a.size(), b.size());
+		int shortSize = std::min(a.size(), b.size());
 
-		if (a.size() - b.size() > 0) {
-			longSize = a.size();
-			shortSize = b.size();
-		}
-		else {
-			longSize = b.size();
-			shortSize = a.size();
-		}
-
-		return (1 - (longSize - shortSize) / shortSize) * 60;
+		return (1 - (longSize - shortSize) / shortSize) * MAX_SCORE;
 	}
 
 };
