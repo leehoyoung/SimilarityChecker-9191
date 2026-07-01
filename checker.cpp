@@ -3,7 +3,10 @@ using std::string;
 class Checker {
 public:
 	int getLengthScore(string a, string b) {
-		return 0;
+		if (a.size() == b.size()) {
+			return 0;
+		}
+		return 60;
 	}
 
 };
