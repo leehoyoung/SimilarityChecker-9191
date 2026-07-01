@@ -14,7 +14,7 @@ public:
 
 private:
 	int calculateScore(int longSize, int shortSize) {
-		double ratio = 1 - static_cast<double>(longSize - shortSize) / shortSize;
+		double ratio = 2 - static_cast<double>(longSize) / shortSize;
 		return static_cast<int>(std::round(ratio * MAX_SCORE));
 	}
 };
