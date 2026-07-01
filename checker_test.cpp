@@ -15,7 +15,10 @@ TEST(Checker, lengthTest3) {
 	Checker check;
 	EXPECT_EQ(40, check.getLengthScore("ABC", "ABCD"));
 }
-
+TEST(Checker, lengthTest4) {
+	Checker check;
+	EXPECT_EQ(23, check.getLengthScore("ABCDEFGH", "ABCDEFGHIJKLM"));
+}
 int main() {
 	InitGoogleMock();
 	return RUN_ALL_TESTS();

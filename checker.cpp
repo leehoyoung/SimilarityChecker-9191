@@ -1,5 +1,6 @@
 #include <string>
 #include <algorithm>
+#include <cmath>
 #include "checker.h"
 using std::string;
 class Checker {
@@ -14,6 +15,6 @@ public:
 private:
 	int calculateScore(int longSize, int shortSize) {
 		double ratio = 1 - static_cast<double>(longSize - shortSize) / shortSize;
-		return static_cast<int>(ratio * MAX_SCORE);
+		return static_cast<int>(std::round(ratio * MAX_SCORE));
 	}
 };
